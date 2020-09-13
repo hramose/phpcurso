@@ -1,0 +1,1 @@
+Funciona todo menos la persistencia de objetos entre llamadas. En poker 

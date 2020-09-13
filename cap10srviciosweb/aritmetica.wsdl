@@ -1,0 +1,7 @@
+<definitions>
+<service name="AritmeticaServicio">
+    <port name="AritmeticaPort" binding="tns:AritmeticaBinding">
+      <soap:address location="http://localhost:8080/jagcurso/cap10srviciosweb/servidor_wsdlsuma.php" />
+    </port>
+  </service>
+  </definitions>

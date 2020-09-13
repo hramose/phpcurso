@@ -1,0 +1,6 @@
+Necesitamos montar un servidor soap servicio web que tenga wsdl se puede hacer sin descripcion pero es mucho mas seguro.
+Pasamos un 
+Funcion 1:
+tituloLibro. Recibe un ISBN y devuelve el título de un libro.
+Funcion 2:
+librosAutor. Recibe el ID del autor y devuelve el número de libros del autor

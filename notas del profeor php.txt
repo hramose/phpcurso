@@ -1,0 +1,7 @@
+
+temas (themes) --> Son plantillas ya echas que te desccargas en internet es importante que tenga bs4
+jquery
+debug php
+Visual Studio Code
+Debug php
+Debug javascript y jquery

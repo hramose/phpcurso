@@ -1,0 +1,6 @@
+Funciona perfectamente
+No tiene relaciones entre las tablas pero funciona bien deberiamos poner las relaciones.
+Solo hay un modo de pago. transferencia bancaria.
+No hay variables session de carrito es una tabla que se vacia cuando se compra
+Tiene seccion de administracion y seccion normal
+Usa jquery y bootstrap

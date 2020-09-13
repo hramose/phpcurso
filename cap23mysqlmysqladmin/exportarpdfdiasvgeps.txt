@@ -1,0 +1,3 @@
+Desde http://localhost:8080/phpmyadmin/db_structure.php?server=1&db=bige
+osea seleccionando la bd bige>mas>diseñador>abrir pagina>seleccionar una pagina guardada anteriormente (bige.unidadfamiliar)>pantalla completa>exportar en todos los formatos a4 y a3.
+Atencion!! al copiar el proyecto ya sea copiando la carpeta bige o opciones>copiar bd se pierde el pagina de la vista del diseño.

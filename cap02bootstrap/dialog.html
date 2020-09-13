@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plantilla Bootstrap</title>
+        <meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <!-- Botón para lanzar diálogo modal -->
+      <button class = "btn btn-primary btn-lg" data-toggle = "modal" data-target = "#miModal">
+        Lanzar diálogo modal
+      </button>
+      <!-- Diálogo modal oculto inicialmente-->
+      <div class = "modal fade" id = "miModal" tabindex = "-1" role = "dialog" aria-labelledby = "miModalTitulo" aria-hidden = "true">
+        <div class = "modal-dialog" role = "document">
+          <div class = "modal-content">
+            <div class = "modal-header">
+              <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+                <span aria-hidden = "true">&times;</span>
+              </button>
+              <h4 class = "modal-title" id = "miModalTitulo">Título del Diálogo</h4>
+            </div>
+            <div class = "modal-body">
+              Aquí podemos añadir cualquier contenido HTML
+            </div>
+            <div class = "modal-footer">
+              <button type = "button" class = "btn btn-default" data-dismiss = "modal">Cerrar</button>
+              <button type = "button" class = "btn btn-primary">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

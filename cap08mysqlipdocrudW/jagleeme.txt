@@ -1,0 +1,1 @@
+se puede utilizar bajando la clase pdo pero no es necesario. viene incluida por defecto

@@ -1,0 +1,44 @@
+﻿Descripción del proycto----------------------------
+Funciona todo perfecto.
+Sin bootstrap,
+
+Orden de todo MVC----------------------------
+1- Creamos el index.php del proyecto
+2- el .htaccess para que siempre redirija a index con parametros
+4-  el arhivo de configuración con las varialbes y constantes globales, require 'config/config.php';
+5- El controlador padre  require 'libs/controller.php';
+6- La vista padre require 'libs/view.php';
+7- El modelo padre require 'libs/model.php';
+8- el libs/app.php para que siempre para crear las diferentes redirecciones. (Es comun para todas la app)
+9-  Es para crear la conexion require 'libs/database.php';
+10- Editamos el inde.php del proyecto y lo editamos asi
+<?php
+
+  
+     require 'config/config.php';
+    require 'libs/controller.php';
+  
+    require 'libs/view.php';
+    require 'libs/model.php';
+    require 'libs/app.php';
+  
+
+
+ 
+    
+     require 'libs/database.php';
+   
+    //Esto es comuún a toda la applicación siempre estará disponible.
+    $app = new App();
+?>
+
+Expicación de como funciona el MVC----------------------
+- Existen diversas implementaciones que tienen sentido:
+Controlador+vista por ejemplo una pagina web estatica.
+Controlador+modelo por ejempplo para borrar un registro sin necesidad de presentacion (ajax y js)
+Controlador+vista+modelo en la mayoria de los sitios que necesites presentacion(vista), accesso a datos (modelo) y la forma de contralar los accessos en nuestra web y 
+sus funcinalidades (controlador).
+
+- Creamos un modelo por cada tabla (hay algunas exclusies pero norlmente funciona así. Tambien creamos adicionalmente una clase llamada por ejemplo consultamodel que
+que serán todas laS acciones
+

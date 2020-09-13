@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<definitions name="Servicio" targetNamespace="urn:Aritmetica"
+     xmlns:tns="urn:Aritmetica"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns="http://schemas.xmlsoap.org/wsdl/">
+ 
+  <message name="Entradanumerolibrosautor">
+    <part name="idautor" type="xsd:int" />
+  </message>
+ 
+  <message name="Salidanumerolibrosautor">
+    <part name="respuesta" type="xsd:float" />
+  </message>
+ <message name="Entrada">
+    <part name="ISBN" type="xsd:string" />
+    
+  </message>
+ 
+  <message name="Salida">
+    <part name="respuesta" type="xsd:string" />
+  </message>
+  <portType name="Operaciones">
+    <operation name="numerolibrosautor">
+      <input message="tns:Entradanumerolibrosautor" />
+      <output message="tns:Salidanumerolibrosautor" />
+    </operation>
+    <operation name="buscartitulo">
+      <input message="tns:Entrada" />
+      <output message="tns:Salida" />
+    </operation>
+  </portType>
+ 
+  <binding name="Enlace" type="tns:Operaciones">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="numerolibrosautor">
+        <soap:operation soapAction="urn:Aritmetica#numerolibrosautor" />
+        <input>
+          <soap:body use="encoded" namespace="urn:Aritmetica" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        </input>
+        <output>
+          <soap:body use="encoded" namespace="urn:Aritmetica" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        </output>
+    </operation>
+    <operation name="buscartitulo">
+        <soap:operation soapAction="urn:Aritmetica#buscartitulo" />
+        <input>
+          <soap:body use="encoded" namespace="urn:Aritmetica" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />     
+        </input>
+        <output>
+          <soap:body use="encoded" namespace="urn:Aritmetica" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />     
+        </output>
+    </operation>
+  </binding>
+ 
+  <service name="Servicio">
+    <port name="Operaciones" binding="tns:Enlace">
+      <soap:address location="http://localhost:8080/fulgencio/3serviciowebbiblioteca/leerbdservidorsoapwsdl.php" />
+    </port>
+  </service>
+
+</definitions>

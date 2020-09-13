@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=5zBb_flFllc
+
+SELECT * from t_alumnos left join t_unidadfamiliar on t_alumnos.Cod_UnidadFamiliar = t_unidadfamiliar.Cod_UnidadFamiliar where t_unidadfamiliar.Cod_UnidadFamiliar is null
+
+SELECT * from t_adultos left join t_unidadfamiliar on t_adultos.Cod_UnidadFamiliar = t_unidadfamiliar.Cod_UnidadFamiliar where t_unidadfamiliar.Cod_UnidadFamiliar is null
+DELETE from t_adultos WHERE cod_adultos BETWEEN 1 and 43
+DELETE from t_adultos WHERE cod_adultos BETWEEN 2014 and 2015
+DELETE from t_alumnos WHERE cod_alumnos BETWEEN 1125 and 1126
+
+
